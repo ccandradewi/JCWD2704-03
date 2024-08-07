@@ -57,7 +57,7 @@ function SignupHostForm() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${'https://jcwd270403.purwadhikabootcamp.com'}/auth/callback?userType=tenant`,
+        redirectTo: `${'http://localhost:3000'}/auth/callback?userType=tenant`,
       },
     });
 

@@ -27,11 +27,7 @@ export async function middleware(request: NextRequest) {
 
       if (res.status != 200) throw new Error('');
       const data = await res.json();
-      response.cookies.set('access_token', data.access_token, {
-        secure: true,
-        domain: 'purwadhikabootcamp.com',
-        sameSite: 'strict',
-      });
+      response.cookies.set('access_token', data.access_token, );
       return data;
     })
     .catch((err) => {

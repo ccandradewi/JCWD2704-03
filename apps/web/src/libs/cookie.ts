@@ -29,9 +29,9 @@ export const setAuthCookie = (token: string, name: string) => {
   setCookie(name, toBase64, {
     maxAge: 24 * 60 * 60,
     path: '/',
-    secure: true,
-    domain: 'purwadhikabootcamp.com',
-    sameSite: 'strict',
+    // secure: true,
+    // domain: 'purwadhikabootcamp.com',
+    // sameSite: 'strict',
   });
 };
 
@@ -43,8 +43,8 @@ export const setRouteCookie = (pathname: string) => {
   if (!checkPath)
     setCookie('path', pathname, {
       maxAge: 60 * 60,
-      secure: true,
-      domain: 'purwadhikabootcamp.com',
-      sameSite: 'strict',
+      // secure: true,
+      // domain: 'purwadhikabootcamp.com',
+      // sameSite: 'strict',
     });
 };

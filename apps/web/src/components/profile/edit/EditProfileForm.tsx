@@ -90,11 +90,7 @@ function EditProfileForm() {
         );
 
         const { token, user: fetchedUser } = response.data;
-        setCookie('access_token', token, {
-          secure: true,
-          domain: 'purwadhikabootcamp.com',
-          sameSite: 'strict',
-        });
+        setCookie('access_token', token);
 
         dispatch(login(fetchedUser));
         window.location.reload();
