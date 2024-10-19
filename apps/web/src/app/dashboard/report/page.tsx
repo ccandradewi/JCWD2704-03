@@ -9,7 +9,6 @@ function page() {
   return (
     <>
       <div className="flex flex-col gap-10 max-w-screen-xl">
-        <SalesPage />
         <Sales />
         <PropertyReport />
         <UserReport />
